@@ -99,6 +99,14 @@ sub Run {
 				#search and replace	
 				${ $Param{Data} } =~ s{$SearchFieldFooter}{$ReturnFieldFooter};
 			}
+
+            # add background color to maintenance text / warning box
+			my $SearchWarning = quotemeta "<div class=\"WarningBox WithIcon\">";
+			my $ReturnWarning = qq~<div class="WarningBox WithIcon" style="background-color:#deb887;">
+			~;
+
+            #search and replace	
+			${ $Param{Data} } =~ s{$SearchWarning}{$ReturnWarning};
            
         }        
 		
