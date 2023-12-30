@@ -32,4 +32,15 @@
             </Hash>
         </Value>
     </Setting>
+    <Setting Name="CustomerLoginBackgroundColor" Required="1" Valid="1">
+        <Description Translatable="1">Set the color on the container form, h2 header and label to match your background. Default is white background and black text.</Description>
+        <Navigation>Frontend::Customer</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="ContainerBackgroundColor">#ffffff</Item>
+                <Item Key="TextHeaderColor">#222</Item>
+                <Item Key="LabelColor">#222</Item>
+            </Hash>
+        </Value>
+    </Setting>
 </otrs_config>
