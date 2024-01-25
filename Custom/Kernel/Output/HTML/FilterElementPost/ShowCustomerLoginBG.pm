@@ -141,7 +141,7 @@ sub Run {
             if ( $CustomerLoginBackgroundColor{'LabelColor'} )
             {
                #label color
-                for my $Optional ( qw( User Password ResetUser Title ) )
+                for my $Optional ( qw( User Password TwoFactorToken ResetUser Title ) )
                 {
                     my $SearchLabel = quotemeta "<label for=\"$Optional\">";
                     my $ReturnLabel =  qq~<label for="$Optional" style="color: $CustomerLoginBackgroundColor{'LabelColor'}">
