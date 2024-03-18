@@ -30,7 +30,6 @@ sub Run {
     my ( $Self, %Param ) = @_;
 
     my $ConfigObject                    = $Kernel::OM->Get('Kernel::Config');
-    #my $ParamObject                     = $Kernel::OM->Get('Kernel::System::Web::Request');
 	
 	# --
 	# Customer Login Background
@@ -77,7 +76,7 @@ sub Run {
 
             #search and replace	 
             ${ $Param{Data} } =~ s{$SearchField1}{$ReturnField1};
-			
+		
 			#check if transparent header is needed
 			if ( $Data{'TransparentHeader'} )
 			{
@@ -107,6 +106,18 @@ sub Run {
 
             #search and replace	
 			${ $Param{Data} } =~ s{$SearchWarning}{$ReturnWarning};
+
+            my %CustomerLoginAlert = %{ $ConfigObject->Get('CustomerLoginAlert') };
+
+            if ( $CustomerLoginAlert{'Alert'} )
+            {
+                my $SearchAlert = quotemeta "<noscript>";
+                my $ReturnAlert = qq~<div class="MessageBox WithIcon" id="Alert" style="background-color: $CustomerLoginAlert{'AlertBackground'};"><p style="color: $CustomerLoginAlert{'AlertTextColor'}">$CustomerLoginAlert{'AlertText'}</p></div>
+                <noscript>
+                ~;
+                #search and replace
+                ${ $Param{Data} } =~ s{$SearchAlert}{$ReturnAlert};
+            }
 
             #color
             my %CustomerLoginBackgroundColor = %{ $ConfigObject->Get('CustomerLoginBackgroundColor') };

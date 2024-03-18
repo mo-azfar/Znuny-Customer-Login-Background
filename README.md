@@ -10,4 +10,4 @@
 		TextHeaderColor = color of the h2 text header (login / reset / register form)
 		LabelColor = color of the label.
 
-![customer-login-bg](customer-login-bg.png)
+![customer-login-bg](doc/en/images/customer-login-bg.png)
