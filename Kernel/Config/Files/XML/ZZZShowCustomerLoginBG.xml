@@ -26,9 +26,9 @@
                 <Item Key="BackgroundRepeat">no-repeat</Item>
                 <Item Key="BackgroundAttachment">fixed</Item>
                 <Item Key="BackgroundSize">cover</Item>
-				<Item Key="Backgroundz-index">-1</Item>
-				<Item Key="TransparentHeader">1</Item>
-				<Item Key="TransparentFooter">1</Item>
+                <Item Key="Backgroundz-index">-1</Item>
+                <Item Key="TransparentHeader">1</Item>
+                <Item Key="TransparentFooter">1</Item>
             </Hash>
         </Value>
     </Setting>
@@ -49,7 +49,7 @@
         <Value>
             <Hash>
                 <Item Key="AlertBackground">#004dad</Item>
-				<Item Key="AlertTextColor">#ffffff</Item>
+                <Item Key="AlertTextColor">#ffffff</Item>
                 <Item Key="AlertText">Please update CustomerLoginAlert</Item>
                 <Item Key="Alert" ValueType="Select" SelectedID="1">
                     <Item ValueType="Option" Value="0" Translatable="1">Disabled</Item>
