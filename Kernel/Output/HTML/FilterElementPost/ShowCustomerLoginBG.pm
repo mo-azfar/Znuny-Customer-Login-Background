@@ -1,13 +1,10 @@
 # --
-# Copyright (C) 2001-2024 OTRS AG, https://otrs.com/
-# --
-# $origin: otrs - 0000000000000000000000000000000000000000 - Kernel/Output/HTML/FilterElementPost/ShowCustomerLoginBG.pm
+# Copyright (C) 2022-2024 mo-azfar, https://github.com/mo-azfar
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-
 package Kernel::Output::HTML::FilterElementPost::ShowCustomerLoginBG;
 
 use strict;
@@ -33,9 +30,6 @@ sub Run {
 
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
-# ---
-    # Customer Login Background
-# ---
     if ( $Param{TemplateFile} eq 'CustomerLogin' )
     {
         if ( defined $ConfigObject->Get('CustomerLoginBackground') )
@@ -185,8 +179,6 @@ sub Run {
         }
 
     }
-
-# ---
 
     return 1;
 }

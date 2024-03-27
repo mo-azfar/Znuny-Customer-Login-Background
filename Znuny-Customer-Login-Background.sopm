@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
     <Name>Znuny-Customer-Login-Background</Name>
-    <Version>7.0.7</Version>
+    <Version>7.0.8</Version>
     <Vendor>mo-azfar</Vendor>
-    <URL>https://otrs.com/</URL>
+    <URL>https://github.com/mo-azfar</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <ChangeLog Version="7.0.1" Date="2023-11-27 10:00:00 +0800">New package.</ChangeLog>
     <ChangeLog Version="7.0.2" Date="2023-12-15 10:00:00 +0800">Add background color to warning / maintenance box.</ChangeLog>
@@ -12,6 +12,7 @@
     <ChangeLog Version="7.0.5" Date="2024-03-02 10:00:00 +0800">Add support to custom alert.</ChangeLog>
     <ChangeLog Version="7.0.6" Date="2024-03-12 10:00:00 +0800">Remove commented code.</ChangeLog>
     <ChangeLog Version="7.0.7" Date="2024-03-27 02:00:00 +0800">Applied code policy.</ChangeLog>
+    <ChangeLog Version="7.0.8" Date="2024-03-27 08:30:00 +0800">Update copyright and code.</ChangeLog>
     <Description Lang="en">Display customer login background image</Description>
     <Framework>7.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre"><![CDATA[
@@ -34,6 +35,7 @@
         7.0.5 - Add support to custom alert.<br/>
         7.0.6 - Remove commented code.<br/>
         7.0.7 - Applied code policy.<br/>
+        7.0.8 - Update copyright and code.<br/>
         <br/><br/>
         ((enjoy))<br/>
         <br/>
